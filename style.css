@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    font-size: 42pt;
+    justify-content:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightskyblue;
+}
+
+.searcharea{
+    display:flex;
+    justify-content:center;
+}
+
+label, input, button{
+    display: inline;
+    font-size: 18pt;
+    margin-top: 20pt;
+    margin-left: 10pt;
+}
+
+label{
+    font-size: 24pt;
+    padding-top: 6pt;
+
+}
+
+.todayweather{
+    height: 100pt;
+    width: 400pt;
+    background-color: lightpink;
+    border-radius: 15pt;
+    margin-top: 10pt;
+    margin-left: 290pt;
+
+}
+
+.forcast{
+    display: flex;
+
+}
+
+.day1, .day2, .day3, .day4, .day5{
+
+    display: inline;
+    height: 400pt;
+    width: 150pt;
+    background-color: lightcyan;
+    border-radius: 15pt;
+    margin-top: 20pt;
+    margin-left: 35pt;
+
+
+}
