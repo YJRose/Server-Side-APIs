@@ -18,14 +18,14 @@ header{
     justify-content:center;
 }
 
-label, input, button{
+.searcharea p, input, button{
     display: inline;
     font-size: 18pt;
     margin-top: 20pt;
     margin-left: 10pt;
 }
 
-label{
+.searcharea p{
     font-size: 24pt;
     padding-top: 6pt;
 
