@@ -1,5 +1,27 @@
-var APIKey = "8f9cd3299c5639dbf3b89c4f63f9c9c4";
-var city;
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid" + APIKey;
+var APIKey = "149f9faa2762053fe5df6b963ed2165b";
+var cityName = document.querySelector("#city");
+var stateCodeE1 = document.querySelector("#statecode");
+var countryName = document.querySelector("#country");
 
-fetch(queryURL)
+var todayweatherE1 = document.querySelector(".todayweather");
+
+
+var SearchBtn = document.querySelector("#search");
+
+SearchBtn.addEventListener("click", function getAPI(queryURL) {
+
+  cityName = cityName.value;
+  stateCodeE1 = stateCodeE1.value;
+  countryName = countryName.value;
+  var queryURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName +"," + stateCodeE1 +","+ countryName + "&limit=1&appid=" + APIKey;
+  
+  fetch(queryURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    
+});
+
+});
