@@ -26,7 +26,7 @@ SearchBtn.addEventListener("click", function getAPI(queryURL) {
     var cityLng = data[0].lon;
     localStorage.setItem("Searchhistory", [ cityNameE1, cityLat, cityLng]);
     
-    var weatherURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLng +"&appid=" + APIKey;
+    var weatherURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLng +"&appid=" + APIKey + "&units=imperial";
 
     return fetch(weatherURL);
   })
@@ -35,6 +35,19 @@ SearchBtn.addEventListener("click", function getAPI(queryURL) {
     })
     .then(function (data) {
       console.log(data);
+      console.log(data.list[0].main.temp);
+  
+      var degfE1 = document.querySelector(".temp");
+      var weatherE1 = document.createElement("p");
+      weatherE1.textContent = data.list[0].main.temp +"°F";
+      degfE1.appendChild(weatherE1);
+
+      var imgE1 = document.querySelector(".img");
+      var weathericon = document.createElement("IMG");
+      var iconE1 = data.list[0].weather[0].icon;
+      weathericon.setAttribute("src", "./img/"+ iconE1 +"@2x.png");
+      imgE1.appendChild(weathericon);
+      
 
 });
 });
