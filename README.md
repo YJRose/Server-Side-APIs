@@ -30,7 +30,7 @@ The following animation demonstrates the application functionality:
 
 ![A.](.)
 
-## Deployed link: 
+## Deployed link: https://yjrose.github.io/Server-Side-APIs/
 
 ---
 © 2023 YJLin Bootcamp Challenge accepted! 👓
