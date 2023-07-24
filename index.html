@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <!-- Link the DayJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous">
+        </script>
     <title>Hello! Weather Dashboard</title>
 
 </head>
 
 <body>
     <header>
-        <p><span>&#127774</span> Hello! Weather Dashboard</p> 
+        <p><span>&#127774</span> Hello! Weather Dashboard</p>
     </header>
 
     <main>
         <div class="searcharea">
             <p>City:</p>
-            <input id = "city" type="text" name="City"/>
+            <input id="city" type="text" name="City" />
             <p>State Code:</p>
-            <input id = "statecode" type="text" name="statecode"/>
+            <input id="statecode" type="text" name="statecode" />
             <p>Country:</p>
-            <input id = "country" type="text" name="country"/>
-            <button id = "search">Search</button>
+            <input id="country" type="text" name="country" />
+            <button id="search">Search</button>
         </div>
 
         <div class="todayweather">
             <div class="img">
-            
+
             </div>
-            <div class = temp>
-                
+            <div class=temp>
+
             </div>
         </div>
         <div class="forcast">
@@ -42,13 +46,16 @@
             </div>
             <div class="day3">
                 <p></p>
-            </div>            
+            </div>
             <div class="day4">
                 <p></p>
             </div>
             <div class="day5">
                 <p></p>
             </div>
+        </div>
+        <div class ="history">
+            
         </div>
     </main>
 

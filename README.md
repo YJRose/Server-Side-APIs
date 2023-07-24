@@ -28,7 +28,7 @@ THEN I am again presented with current and future conditions for that city
 
 The following animation demonstrates the application functionality:
 
-![A.](.)
+![weather dashboard version 1](./img/Weather%20dashboard%20_v1.png)
 
 ## Deployed link: 
 
