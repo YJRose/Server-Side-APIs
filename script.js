@@ -17,7 +17,7 @@ SearchBtn.addEventListener("click", function getAPI(event) {
   cityName = document.querySelector("#city").value;
   stateCodeE1 = document.querySelector("#statecode").value;
   countryName = document.querySelector("#country").value;
-  var queryURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "," + stateCodeE1 + "," + countryName + "&appid=" + APIKey;
+  var queryURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "," + stateCodeE1 + "," + countryName + "&appid=" + APIKey;
   //get city lat and long
   fetch(queryURL)
     .then(function (response) {
@@ -30,7 +30,7 @@ SearchBtn.addEventListener("click", function getAPI(event) {
       var cityLng = data[0].lon;
       localStorage.setItem("Searchhistory", [cityNameE1, cityLat, cityLng]);
 
-      var weatherURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLng + "&appid=" + APIKey + "&units=imperial";
+      var weatherURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLng + "&appid=" + APIKey + "&units=imperial";
       //get weather data
       return fetch(weatherURL);
     })
